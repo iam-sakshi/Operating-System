@@ -1,1 +1,87 @@
+- Interestingly , Computer or any simple electronic device are possible to exist without OS , but then we have to do all task manually 
+  If you directly load instructions into memory and start execution, the computer will run them.
+  Early computers worked exactly like this — operators gave instructions via switches, punched cards, etc.
 
+- Operating System 
+Early 1950s–1960s
+Computers originally ran one program at a time, manually loaded by operators.
+First OS-like systems were created to automate job scheduling and manage hardware.
+-Who introduced it?
+It's not credited to one single person, but to early computing labs & companies:
+Contributor	Contribution
+General Motors Research Lab (1956)	-- First known OS for IBM 701 (GM-NAA I/O)
+IBM (late 1950s–1960s)	-- Popularized OS concept (IBM OS/360 in 1964)
+University researchers	-- Time-sharing OS ideas (MIT, Bell Labs)
+
+Hardware | System Software | Application software 
+
+        ┌─────────────────────────┐
+        │     Application Apps    │
+        │ (Browsers, Games, IDEs) │
+        └───────────▲────────────┘
+                    │
+        ┌───────────┴────────────┐
+        │     System Software     │
+        │                         │
+        │ ┌─────────────────────┐ │
+        │ │   Operating System  │ │
+        │ │ (Windows, Linux,    │ │
+        │ │  macOS, Android)    │ │
+        │ └───────────▲─────────┘ │
+        │             │           │
+        │ ┌───────────┴─────────┐ │
+        │ │   Device Drivers    │ │
+        │ │ (GPU, Printer,      │ │
+        │ │  Keyboard drivers)  │ │
+        │ └───────────▲─────────┘ │
+        │             │           │
+        │ ┌───────────┴─────────┐ │
+        │ │      Firmware       │ │
+        │ │ (BIOS, UEFI,        │ │
+        │ │  Embedded FW)       │ │
+        │ └───────────▲─────────┘ │
+        │             │           │
+        │ ┌───────────┴─────────┐ │
+        │ │      Utilities      │ │
+        │ │ (Antivirus, Disk    │ │
+        │ │  Cleanup, Backup)   │ │
+        │ └───────────▲─────────┘ │
+        │             │           │
+        │ ┌───────────┴─────────┐ │
+        │ │ Compilers, Linkers  │ │
+        │ │  & Loaders          │ │
+        │ └───────────▲─────────┘ │
+        └─────────────│───────────┘
+                      │
+          ┌───────────┴─────────┐
+          │       Hardware      │
+          │ (CPU, RAM, Disk,    │
+          │  Monitor, Devices)  │
+          └─────────────────────┘
+
+Hardware is considered passive by itself.
+it cannot do anything on its own.
+It only responds when software gives instructions.
+CPU needs instructions (program)
+RAM needs data to store
+Disk needs commands to read/write
+So hardware = capability, software = control & action.
+
+
+| Category                                                        | Description                                          | Examples                                                     
+| --------------------------------------------------------------- | ---------------------------------------------------- | -------------------------------------------------------------
+|   Operating System**                                            | Controls hardware, runs programs, manages resources  | Windows, Linux, macOS, Android, iOS, UNIX                                      
+|  Device Drivers                                                 | Control specific hardware devices                    | Printer driver, GPU driver, Wi-Fi driver, USB driver                          
+| Firmware                                                        | Permanent instructions stored in ROM/Flash           | BIOS/UEFI, router firmware, embedded system firmware         
+
+| Utility Programs                                                | Maintain and optimize system performance             | Antivirus, Disk cleanup, Backup tools, File compression
+                                                                                                                           (WinZip), Task Manager 
+
+| System Management Software                                      | Manages and monitors IT systems in enterprise setups | VMware vSphere, Kubernetes, System Center, Splunk                              
+| Language Translators / System Programming Tools                 | Convert and support running program code             | Assemblers, Compilers, Interpreters, Linkers, Loaders                          
+| Boot Software / Boot Loader                                     | Initiates OS loading when computer starts            | GRUB, LILO, Windows Boot Manager                                               
+| Server & Network Management Software** *(sometimes included)    | Manages network and server operations                | DNS servers, DHCP servers, Firewall software                                   
+
+System Software is the software that manages hardware and provides a platform for application software.
+It acts as the bridge between user/programs and hardware.
+It is ACTIVE unlike hardware is PASSIVE 
